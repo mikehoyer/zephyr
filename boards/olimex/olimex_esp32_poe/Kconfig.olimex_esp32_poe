@@ -1,0 +1,8 @@
+# Olimex ESP32-POE board configuration
+# Copyright (c) 2025
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_OLIMEX_ESP32_POE
+	select SOC_ESP32_WROOM32_N4
+	select SOC_ESP32_PROCPU if BOARD_OLIMEX_ESP32_POE_ESP32_PROCPU
+	select SOC_ESP32_APPCPU if BOARD_OLIMEX_ESP32_POE_ESP32_APPCPU
